@@ -36,11 +36,8 @@ then
 	echo "|-------------------------------------------------------------|"
 	read gitproject
 	git clone $gitproject www
-	cd www
-	git checkout staging
-	git pull		
-	cd ..			
-	cp $parentdir/clone-libs.sh www
+	cd www	
+	git pull			
 	clear
 	echo "|----------------------------------------------------------------"			
 	echo "|        Remember create database with next input comand        |"
